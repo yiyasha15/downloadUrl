@@ -14,8 +14,9 @@ job.start();
 
 function downloadFiles(){
   var today = new Date();
-  today.setHours(today.getHours()); 
-  today.setMinutes(today.getMinutes());
+  today.setHours(today.getHours() + 5); 
+  console.log(today.getHours());
+  today.setMinutes(today.getMinutes() + 30);
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   console.log(today);
   console.log("current time: ", time);
